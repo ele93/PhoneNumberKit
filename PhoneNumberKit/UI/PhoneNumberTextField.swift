@@ -283,7 +283,7 @@ open class PhoneNumberTextField: UITextField, UITextFieldDelegate {
             .compactMap { UnicodeScalar(flagBase + $0.value)?.description }
             .joined()
 
-        self.flagButton.setTitle(flag + " ", for: .normal)
+        self.flagButton.setTitle(flag + "v", for: .normal)
         let fontSize = (font ?? UIFont.preferredFont(forTextStyle: .body)).pointSize
         self.flagButton.titleLabel?.font = UIFont.systemFont(ofSize: fontSize)
     }
