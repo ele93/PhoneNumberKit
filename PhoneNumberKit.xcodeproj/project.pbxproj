@@ -42,6 +42,7 @@
 		34FD5D2B1D55F7AE00F328F9 /* PhoneNumberKit.h in Headers */ = {isa = PBXBuildFile; fileRef = C6DF6CA71D1B145300259F4B /* PhoneNumberKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		34FD5D2C1D55F7AE00F328F9 /* PhoneNumberKit.h in Headers */ = {isa = PBXBuildFile; fileRef = C6DF6CA71D1B145300259F4B /* PhoneNumberKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5D14267D238F5842002DD197 /* CountryCodePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D14267C238F5842002DD197 /* CountryCodePickerViewController.swift */; };
+		75A4979C260A9855005665D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75A4979B260A9854005665D1 /* Assets.xcassets */; };
 		A863BC9B23801ABC00088460 /* PhoneNumberMetadata.json in Resources */ = {isa = PBXBuildFile; fileRef = A863BC9923801ABC00088460 /* PhoneNumberMetadata.json */; };
 		A863BC9C23801ABC00088460 /* PhoneNumberMetadata.json in Resources */ = {isa = PBXBuildFile; fileRef = A863BC9923801ABC00088460 /* PhoneNumberMetadata.json */; };
 		A863BC9D23801ABC00088460 /* PhoneNumberMetadata.json in Resources */ = {isa = PBXBuildFile; fileRef = A863BC9923801ABC00088460 /* PhoneNumberMetadata.json */; };
@@ -120,6 +121,7 @@
 		34AA66031BDD448B00467912 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		34F26FBD2517DCB700B6AF4D /* Bundle+Resources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Resources.swift"; sourceTree = "<group>"; };
 		5D14267C238F5842002DD197 /* CountryCodePickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CountryCodePickerViewController.swift; path = UI/CountryCodePickerViewController.swift; sourceTree = "<group>"; };
+		75A4979B260A9854005665D1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A863BC9923801ABC00088460 /* PhoneNumberMetadata.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = PhoneNumberMetadata.json; path = Resources/PhoneNumberMetadata.json; sourceTree = "<group>"; };
 		C6DF6C4B1D1B09CF00259F4B /* PhoneNumberKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PhoneNumberKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6DF6C911D1B120400259F4B /* PhoneNumberKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PhoneNumberKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -252,6 +254,7 @@
 			isa = PBXGroup;
 			children = (
 				3435CC951BBFF66F003F953B /* PhoneNumberMetadata.json */,
+				75A4979B260A9854005665D1 /* Assets.xcassets */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -443,6 +446,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75A4979C260A9855005665D1 /* Assets.xcassets in Resources */,
 				34CA34522380307300788D7D /* PhoneNumberMetadata.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

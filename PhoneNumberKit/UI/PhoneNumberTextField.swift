@@ -283,9 +283,22 @@ open class PhoneNumberTextField: UITextField, UITextFieldDelegate {
             .compactMap { UnicodeScalar(flagBase + $0.value)?.description }
             .joined()
 
-        self.flagButton.setTitle(flag + "v", for: .normal)
+        //self.flagButton.setTitle(flag + " ", for: .normal)
+        
+        let iconImage: UIImage = UIImage(named: "dropDownArrowDark")!
+        
+        let icon = NSTextAttachment()
+        icon.bounds = CGRect(x: 0, y: 0, width: iconImage.size.width, height: iconImage.size.height)
+        icon.image = iconImage
+        let iconString = NSAttributedString(attachment: icon)
+        let attributedText = NSMutableAttributedString(string: flag)
+        
+        attributedText.append(iconString)
+        
+        self.flagButton.setAttributedTitle(attributedText, for: .normal)
         let fontSize = (font ?? UIFont.preferredFont(forTextStyle: .body)).pointSize
         self.flagButton.titleLabel?.font = UIFont.systemFont(ofSize: fontSize)
+        
     }
 
     open func updatePlaceholder() {
