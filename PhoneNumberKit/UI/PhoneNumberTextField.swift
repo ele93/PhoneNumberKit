@@ -288,14 +288,23 @@ open class PhoneNumberTextField: UITextField, UITextFieldDelegate {
         let iconImage: UIImage = UIImage(named: "dropDownArrowDark")!
         
         let icon = NSTextAttachment()
-        icon.bounds = CGRect(x: 0, y: 0, width: iconImage.size.width, height: iconImage.size.height)
+        icon.bounds = CGRect(x: 0, y: iconImage.size.height/2.0, width: iconImage.size.width, height: iconImage.size.height)
         icon.image = iconImage
         let iconString = NSAttributedString(attachment: icon)
         let attributedText = NSMutableAttributedString(string: flag)
         
         attributedText.append(iconString)
         
+        let paragraph = NSMutableParagraphStyle()
+        paragraph.alignment = .center
+        
+        let range:NSRange = (attributedText.string as NSString).range(of: flag)
+        
+        attributedText.addAttribute(NSAttributedString.Key.paragraphStyle, value: paragraph, range: range)
+        
         self.flagButton.setAttributedTitle(attributedText, for: .normal)
+        
+        
         let fontSize = (font ?? UIFont.preferredFont(forTextStyle: .body)).pointSize
         self.flagButton.titleLabel?.font = UIFont.systemFont(ofSize: fontSize)
         
